@@ -1,0 +1,189 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Reem Kufi', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  outline:none;
+  cursor: default;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  height: 100vh;
+  font-family: 'Reem Kufi', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #d7e6fa;
+  color: #2f1d06;
+  scroll-margin-top: 1vh;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+main {
+  
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+
+}
+
+h1 {
+  font-size: 3em;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+nav {
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  background-color: #d7e6fa;
+  padding: 20px;
+  position: relative;
+  margin-bottom: -77.27px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  flex: 1;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #2f1d06;
+  transition: 0.8s;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #2f1d06;
+  transition: 0.8s;
+  padding: 20px 50px;
+}
+
+img {
+  margin: 0px 10px;
+}
+
+i {
+  flex: 1;
+  font-size: 5em;
+}
+
+a:active,a:focus,a:hover {
+  outline:none;
+  color: #4b41be;
+}
+
+small {
+  font-family: 'Roboto', sans-serif;
+  flex: 1;
+}
+
+.name {
+  padding: 20px;
+}
+
+.sticky {
+  top: 0;
+  position: fixed;
+}
+
+.icon {
+  transform: rotate(180deg) translate(0px, 10px);
+  width: 10%;
+}
+
+.collapse {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+}
+
+.inactive {
+  color: #d7e6fa;
+  display:none;
+  flex:1.5;
+}
+
+.lf {
+  justify-content: flex-end;
+  flex:1.5;
+}
+
+.rt {
+  justify-content: flex-start;
+  flex:1.5;
+}
+
+.lr {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.rl {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.email {
+  color: #d7e6fa;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* if you want to change the original color */
+.devicon-git-plain path {
+  fill: #4691f6;
+}
+
+#contact {
+  flex: 1;
+  margin: 30px;
+}
