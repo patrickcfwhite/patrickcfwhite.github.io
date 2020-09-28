@@ -1,0 +1,101 @@
+{
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet');
+
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 'Palanquin', sans-serif;
+
+  
+}
+
+#aboutSwipe {
+  background-image: url('/assets/bg\ 2\ test.png');
+  background-size: cover;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  /* background-color: burlywood;
+  /* clip-path: polygon(99% 100%, 100% 0, 1% 0, 0 100%); */
+  /* clip-path: polygon(50% 0%, 98% 0, 100% 9%, 100% 100%, 75% 99%, 50% 100%, 16% 98%, 0 100%, 0% 35%, 0 0); */
+
+}
+ 
+/* #projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  margin: 50px auto 
+} */
+
+
+#projectCard {
+  background-color: lightblue;
+}
+
+#homePage {
+  background-image: url('/assets/bg\ test.png');
+  background-size: cover;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  /* clip-path: polygon(100% 0, 60% 0, 40% 100%, 100% 100%); */
+  /* position: relative; */
+  /* z-index: -1; */
+}
+
+.skills {
+  background-color: white;
+}
+
+.border {
+  border: 1px black solid;
+}
+
+/* .section {
+  padding: 2rem 1.5rem;
+} */
+
+.about-text {
+  background-color: rgb(161, 227, 251);
+  color: black;
+  border-radius: 5px;
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about h1 {
+  text-align: left;
+}
+
+.work h1 {
+  text-align: center;
+}
+
+.contact h1 {
+  text-align: right;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #FF0000;
+  }
+

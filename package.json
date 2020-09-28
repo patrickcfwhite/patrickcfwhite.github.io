@@ -1,0 +1,40 @@
+{
+  "name": "basic-react-webpack-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --mode=development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bulma": "^0.9.0",
+    "devicon": "^2.2.0",
+    "devicon-react": "^1.1.1",
+    "devicon-react-svg": "^0.2.2",
+    "file-loader": "^6.1.0",
+    "react": "^16.13.1",
+    "react-devicon": "^0.1.9",
+    "react-dom": "^16.13.1",
+    "react-responsive": "^8.1.0",
+    "swiper": "^6.3.1",
+    "url-loader": "^4.1.0"
+  }
+}

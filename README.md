@@ -1,1 +1,0 @@
-# patrickcfwhite.github.io
