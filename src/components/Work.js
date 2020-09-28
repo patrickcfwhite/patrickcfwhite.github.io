@@ -63,7 +63,7 @@ const Work = () => {
     <div className="slideContainer work section">
       <dev className="level">
         <div className="level-left">
-      <h1 className="title level-item">Projects~</h1>
+      <h1 className="title level-item">~Projects</h1>
       </div>
       <div className="level-right">
       <div className="swiper-pagination level-item"></div>

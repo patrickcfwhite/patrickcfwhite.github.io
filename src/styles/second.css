@@ -24,10 +24,20 @@
 
 #homePage {
   background-color: #69a5a4;
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #314a43, #69a5a4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #8bd8c2, #69a5a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #homePage .title {
   color: white;
+  font-size: calc(50px + .5vw);
+}
+#homePage .subtitle {
+  color: black;
+  font-size: calc(35px + .5vw);
+  font-weight: 200;
 }
 
 #projectCard {
@@ -38,6 +48,7 @@
 .title {
   color: #4682b4;
   transition: all 0.5s ease;
+  font-weight: 800;
 }
 
 .about-text {
@@ -55,7 +66,7 @@
 p {
   font-size: calc(10px + .5vw);
   color: black;
-  font-weight: 550;
+  font-weight: 320;
 }
 /* 
 .column {
@@ -94,7 +105,7 @@ html {
   }
 
   .contactText {
-    font-size: 3rem;
+    font-size: calc(40px + .5vw);
     color: black
     
   }

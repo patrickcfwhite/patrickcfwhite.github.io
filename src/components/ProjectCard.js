@@ -9,9 +9,10 @@ const devIconStyle = {
 
 const ProjectCard = ({ title, image, blurb, url }) => {
 
-  const handleClick = (event) => {
+  const handleClick = (event, type) => {
     event.preventDefault()
-    window.open(url.project, '_blank')
+    const urlChoice = type === 'github' ? url.readme : url.project
+    window.open(urlChoice, '_blank')
   }
 
   return (
@@ -21,21 +22,21 @@ const ProjectCard = ({ title, image, blurb, url }) => {
         <div className="columns">
           <div className="column section has-text-left">
             {/* <h2 className="subtitle">task:</h2><small>{blurb.task}</small><br/> */}
-            <h2 className="subtitle">process:</h2><p>{blurb.process}</p><br/>
-            <h2 className="subtitle">tech used:</h2>
+            <h2 className="subtitle">Process:</h2><p>{blurb.process}</p><br/>
+            <h2 className="subtitle">Tech Used:</h2>
             <div>{blurb.used.map(item => <span key={item}><p>~ {item}</p></span>)}</div><br/>
           </div>
           <div className="column">
             <img src={image} alt={`${title} screenshot`} />
             <div className="level">
               <div className="level-left">
-                <div className="level-item iconLink" onClick={(event) => handleClick(event)}>
+                <div className="level-item iconLink" onClick={(event) => handleClick(event, 'github')}>
                   <p>View the code on Github</p>
                   <DevIcon icon='github_badge' wordmark="true" style={devIconStyle}/>
                 </div>
               </div>
               <div className="level-right">
-                <div className="level-item iconLink" onClick={(event) => handleClick(event)}>
+                <div className="level-item iconLink" onClick={(event) => handleClick(event, 'project')}>
                   <p>Launch Project</p>
                   <DevIcon icon='code' wordmark="true" style={devIconStyle} />
                 </div>

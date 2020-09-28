@@ -40,7 +40,7 @@ const App = () => {
       speed={800}
       mousewheel={{ forceToAxis: true }}
       keyboard={true}
-      allowTouchMove={false}
+      allowTouchMove={true}
       centeredSlides={true}
     >
       <SwiperSlide id="homePage">
