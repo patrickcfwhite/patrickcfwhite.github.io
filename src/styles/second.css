@@ -82,7 +82,8 @@ html {
   }
 
   #photo {
-    max-width: 20rem;
+    max-width: 26vw;
+    max-height: 26vh;
     border-radius: 50%;
   }
 

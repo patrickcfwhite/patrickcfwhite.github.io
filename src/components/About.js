@@ -53,7 +53,7 @@ const About = () => {
             <p>My main takeaway from the course is how much I actually enjoy coding, and how diving into the intensive course has
             further solidified that I want to pursue it as a career. It feels very exciting for me to find I have this much passion in a vocation that isn’t music.
             </p><br /><br />
-            <img src={'../assets/headshotbw.jpg'} id="photo" alt="photo of me"/>
+            <img src={require('../assets/headshotbw.jpg')} id="photo" alt="photo of me"/>
           </div>
           {/* <h1 className="subtitle">~Current Goals</h1> */}
 
