@@ -15,11 +15,10 @@
   background: #69a5a4;
 }
 
-.activeTitle {
-  background-color: rgba(191, 83, 16, 0.536);
-  transition: all 0.5s ease;
-  border-radius: 2px;
-  padding: 10px
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 #homePage {
@@ -27,22 +26,40 @@
   background: #1f4037;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #314a43, #69a5a4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #8bd8c2, rgb(105, 165, 164)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-#homePage .title {
+.about-tab {
+  border: 1px solid rgb(106 167 165);
+  border-bottom: none;
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0.5em;
+  font-size: 1.25em;
+  background-image: linear-gradient(180deg, #6aa7a51f, transparent);
+}
+
+.about-tab.activeTitle {
+  background: linear-gradient(180deg, #6aa7a59c, transparent);
+}
+
+.splash-screen .title {
   color: white;
   font-size: calc(50px + .5vw);
 }
-#homePage .subtitle {
+
+
+.splash-screen .subtitle {
   color: black;
   font-size: calc(35px + .5vw);
   font-weight: 200;
 }
 
+.splash-screen {
+  background: linear-gradient(to bottom, #8bd8c2, rgb(105, 165, 164)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #projectCard {
   /* border: black solid 1px; */
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .title {

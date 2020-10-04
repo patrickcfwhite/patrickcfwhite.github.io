@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-    <section className="slideContainer hero is-fullheight">
+    <section className="slideContainer hero is-fullheight splash-screen">
       <div data-aos="fade-up" className="hero-body">
         <div className="container">
           <h1 className="title">Patrick White</h1>

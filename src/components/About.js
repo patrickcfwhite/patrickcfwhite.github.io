@@ -90,10 +90,10 @@ const About = () => {
       {isMobile && <>
         <div className="level is-mobile">
           <div className="level-left">
-            <h2 className={`${aboutDisplay ? 'activeTitle' : ''} level-item title`} onClick={(event) => handleAbout(event)}>~About Me</h2>
+            <h2 className={`${aboutDisplay ? 'activeTitle' : ''} level-item about-tab`} onClick={(event) => handleAbout(event)}>~About Me</h2>
           </div>
           <div className="level-right">
-            <h2 className={`${skillsDisplay ? 'activeTitle' : ''} level-item title`} onClick={(event) => handleSkills(event)}>~Skills</h2>
+            <h2 className={`${skillsDisplay ? 'activeTitle' : ''} level-item about-tab`} onClick={(event) => handleSkills(event)}>~Skills</h2>
           </div>
         </div>
         { aboutDisplay && <div className="about-text section">

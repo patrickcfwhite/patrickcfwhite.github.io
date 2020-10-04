@@ -31,31 +31,41 @@ const App = () => {
 
   // const isMobile = useMediaQuery(({ query: '(max-width: 767px)' }))
 
+  // return (
+  //   <Swiper
+  //     direction={'vertical'}
+  //     style={{ maxWidth: '100vw', maxHeight: '100vh' }}
+  //     // effect='fade'
+  //     // fadeEffect={{ crossFade: true }}
+  //     speed={800}
+  //     mousewheel={{ forceToAxis: true }}
+  //     keyboard={true}
+  //     allowTouchMove={true}
+  //     centeredSlides={true}
+  //   >
+  //     <SwiperSlide >
+  //       <Home id="homePage"/>
+  //     </SwiperSlide>
+  //     <SwiperSlide >
+  //       <About id="aboutSwipe"/>
+  //     </SwiperSlide>
+  //     <SwiperSlide>
+  //       <Work />
+  //     </SwiperSlide>
+  //     <SwiperSlide>
+  //       <Contact />
+  //     </SwiperSlide>
+  //   </Swiper>
+  // )
+
+
   return (
-    <Swiper
-      direction={'vertical'}
-      style={{ maxWidth: '100vw', maxHeight: '100vh' }}
-      // effect='fade'
-      // fadeEffect={{ crossFade: true }}
-      speed={800}
-      mousewheel={{ forceToAxis: true }}
-      keyboard={true}
-      allowTouchMove={true}
-      centeredSlides={true}
-    >
-      <SwiperSlide id="homePage">
-        <Home />
-      </SwiperSlide>
-      <SwiperSlide id="aboutSwipe">
-        <About />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Work />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Contact />
-      </SwiperSlide>
-    </Swiper>
+    <>
+    <Home id="homePage"/>
+    <About id="aboutSwipe"/>
+    <Work />
+    <Contact />
+    </>
   )
 }
 

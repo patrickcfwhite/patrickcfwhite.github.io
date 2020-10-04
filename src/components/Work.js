@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import  SwiperCore, { Mousewheel, Keyboard, Navigation, Pagination } from 'swiper'
 import ProjectCard from './ProjectCard'
 import 'swiper/swiper-bundle.css'
-
+import { useMediaQuery } from 'react-responsive'
 
 SwiperCore.use([Mousewheel, Keyboard, Navigation, Pagination])
 
@@ -58,6 +58,9 @@ const Work = () => {
     }
   ]
 
+  const isMobile = useMediaQuery(({ query: '(max-width: 767px)' }))
+
+
   return (
 
     <div className="slideContainer work section">
@@ -73,12 +76,14 @@ const Work = () => {
         mousewheel={{ forceToAxis: true }}
         allowTouchMove={true}
         keyboard={true}
+
         navigation={true}
         pagination={{ clickable: true, el: '.swiper-pagination', renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>'
         } }}
         speed={500}
-        autoHeight={true}
+        autoHeight={false}
+
         // style={{ maxHeight: '100vh' }}
       >
         {
