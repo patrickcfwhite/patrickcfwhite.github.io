@@ -6,7 +6,7 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import  SwiperCore, { Mousewheel, Keyboard, EffectFade } from 'swiper'
-import useMediaQuery from 'react-responsive'
+// import useMediaQuery from 'react-responsive'
 import AOS from 'aos'
 
 

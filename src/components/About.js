@@ -4,18 +4,24 @@ import DevIcon from 'devicon-react-svg'
 // import 'devicon'
 // import Devicon from './Devicon'
 import { useMediaQuery } from 'react-responsive'
-import AOS from 'aos'
+// import AOS from 'aos'
 
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 import 'devicon'
 
-const skills = ['javascript', 'python', 'html5', 'css3', 'react', 'nodejs', 'sass', 'django', 'github_badge', 'npm', 'webpack', 'heroku', 'postgresql', 'mongodb', 'visualstudio', 'heroku', 'git', 'apple']
+const skills = [['javascript', 'JavaScript'], ['nodejs', 'Node.js'], ['react', 'React'],
+ ['html5', 'HTML5'], ['css3', 'CSS3'], ['sass','SASS'], ['python', 'Python'], ['django', 'Django'], ['github', 'Github'], ['npm', 'NPM'], 
+['webpack', 'Webpack'], ['postgresql', 'PostgreSQL'], ['mongodb', 'MongoDB'], 
+['visualstudio', 'Visual Studio'], ['heroku', 'Heroku'], ['git', 'Git'], ['apple', 'Apple'], ['yarn', 'Yarn']
+]
 
 const devIconStyle = {
-  fill: '#69a5a4',
-  width: '4vw',
-  minWidth: '40px'
+  color: '#69a5a4',
+  fontSize: '3.2vw',
 }
+
+const photoOfMe = require('../assets/headshotbw.jpg')
+const npmLogo = require('../assets/npmlogo.png')
 
 const About = () => {
 
@@ -23,6 +29,7 @@ const About = () => {
 
   const [aboutDisplay, setAbout] = useState(true)
   const [skillsDisplay, setSkills] = useState(false)
+  const [nameDisplay, setNameDisplay] = useState(false)
 
   const handleAbout = (event) => {
     event.preventDefault()
@@ -34,6 +41,7 @@ const About = () => {
     setAbout(false)
     setSkills(true)
   }
+   
 
   return (
     <div id="aboutSlide" className="slideContainer about section">
@@ -53,7 +61,7 @@ const About = () => {
             <p>My main takeaway from the course is how much I actually enjoy coding, and how diving into the intensive course has
             further solidified that I want to pursue it as a career. It feels very exciting for me to find I have this much passion in a vocation that isn’t music.
             </p><br /><br />
-            <img src={require('../assets/headshotbw.jpg')} id="photo" alt="patrick white"/>
+            <img src={photoOfMe} id="photo" alt="patrick white"/>
           </div>
           {/* <h1 className="subtitle">~Current Goals</h1> */}
 
@@ -61,11 +69,18 @@ const About = () => {
         <div className="column is-two-fifths">
           <h1 className="title">~Skills</h1>
           <div className="columns is-multiline section skills">
-            {skills.map(skill => {
+            {skills.map(([skill, name]) => {
               return (
-                <div key={`${skill}-icon`} className="column is-3-desktop is-hidden-mobile has-text-centered">
-                  <DevIcon icon={skill} style={devIconStyle} />
-                  {/* <i className={`devicon-${skill}-plain`}></i> */}
+                <div 
+                  key={`${skill}-icon`} 
+                  className="column is-3-desktop is-hidden-mobile has-text-centered"> 
+                  {/* <DevIcon icon={skill} style={devIconStyle} /> */}
+                  {skill !== 'npm '? 
+                  <i className={skill === 'npm' ? `devicon-${skill}-original skillIcon` : `devicon-${skill}-plain skillIcon`} style={devIconStyle}></i>
+                  :
+                  <img src={npmLogo} alt='npm logo' style={devIconStyle}/>
+                }
+                  <p className="skill-overlay">{name}</p>
                 </div>
               )
             })}
@@ -98,12 +113,12 @@ const About = () => {
          { skillsDisplay &&
          // <div className="columns is-mobile is-multiline section skills">
             <ul className="content section">
-              {skills.map(skill => {
+              {skills.map(([skill, name]) => {
                 return (
                 // <div key={`${skill}-icon`} className="column">
                 //   <DevIcon icon={skill} style={devIconStyle} />
                 // </div>
-                  <li key={`${skill}-list`}><p>{skill}</p></li>
+                  <li key={`${skill}-list`}><p>~{name}</p></li>
                 )
               })}
             </ul>

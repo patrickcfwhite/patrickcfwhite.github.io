@@ -26,7 +26,7 @@
   background-color: #69a5a4;
   background: #1f4037;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #314a43, #69a5a4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #8bd8c2, #69a5a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #8bd8c2, rgb(105, 165, 164)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -46,7 +46,7 @@
 }
 
 .title {
-  color: #4682b4;
+  color: rgb(70, 130, 180);
   transition: all 0.5s ease;
   font-weight: 800;
 }

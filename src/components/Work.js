@@ -40,7 +40,7 @@ const Work = () => {
       blurb: {
         task: 'For my project I did this blah blah blah',
         process: 'A group development of a full stack application utilising a MERN stack. Inspired by the COVID-19 lockdown, KAP features login authentication and provides users with a collection of activity ideas whilst being kept indoors. KAP was designed to bring people together through the sharing of ideas. The app utilises CRUD operations giving users power to manage their uploaded content.',
-        used: ['React', 'Javascript', 'MongoDB', 'Mongoose', 'Node.js', 'Express.js', 'HTML5/SASS', 'GreenSock Animation Platform', 'Axios', 'JSON Web Token', 'Nodemailer']
+        used: ['React', 'JavaScript', 'MongoDB', 'Mongoose', 'Node.js', 'Express.js', 'HTML5/SASS', 'GreenSock Animation Platform', 'Axios', 'JSON Web Token', 'Nodemailer']
       },
       url: { project: 'https://patrick-white-ga-project-3.herokuapp.com/', readme: 'https://github.com/patrickcfwhite/Project-3' },
       id: 3 
@@ -51,7 +51,7 @@ const Work = () => {
       blurb: {
         task: 'For my project I did this blah blah blah',
         process: 'The app is a learning tool for guitarists. It takes a “key” input and a corresponding scale I.e. “C - Major Scale” and generates a fretboard that displays every note within the scale and can highlight positions one would play these scales in. The app also displays a score below showing one octave of the scale and will play one octave ascending and descending. Finally each fret is clickable and will play the correct pitch at that fret. The app has a React front-end and a Django backend, using PostgreSQL to store information about the scales, and also user details and saved scales. It uses two external libraries Vex Flow to generate an image of the scale and midi-sounds-react to handle the audio.',
-        used: ['React', 'Javascript', 'Django', 'HTML5/SASS', 'Axios', 'JSON Web Token', 'Vex Flow', 'MIDI Sounds']
+        used: ['React', 'JavaScript', 'Python', 'Django', 'HTML5/SASS', 'Axios', 'JSON Web Token', 'Vex Flow', 'MIDI Sounds']
       },
       url: { project: 'https://patrick-white-fretbored.herokuapp.com/', readme: 'https://github.com/patrickcfwhite/Project-4' },
       id: 4
@@ -61,14 +61,14 @@ const Work = () => {
   return (
 
     <div className="slideContainer work section">
-      <dev className="level">
+      <div className="level">
         <div className="level-left">
       <h1 className="title level-item">~Projects</h1>
       </div>
       <div className="level-right">
       <div className="swiper-pagination level-item"></div>
       </div>
-      </dev>
+      </div>
       <Swiper
         mousewheel={{ forceToAxis: true }}
         allowTouchMove={true}
@@ -78,8 +78,8 @@ const Work = () => {
           return '<span class="' + className + '">' + (index + 1) + '</span>'
         } }}
         speed={500}
-        // autoHeight={true}
-        style={{ maxHeight: '100vh' }}
+        autoHeight={true}
+        // style={{ maxHeight: '100vh' }}
       >
         {
           work.map(project => {
