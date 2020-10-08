@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DevIcon from 'devicon-react-svg'
+// import DevIcon from 'devicon-react-svg'
 // import Devicon from 'devicon-react'
 // import 'devicon'
 // import Devicon from './Devicon'
@@ -29,7 +29,7 @@ const About = () => {
 
   const [aboutDisplay, setAbout] = useState(true)
   const [skillsDisplay, setSkills] = useState(false)
-  const [nameDisplay, setNameDisplay] = useState(false)
+  // const [nameDisplay, setNameDisplay] = useState(false)
 
   const handleAbout = (event) => {
     event.preventDefault()

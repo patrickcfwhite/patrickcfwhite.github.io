@@ -60,8 +60,8 @@ const Work = () => {
 
   const isMobile = useMediaQuery(({ query: '(max-width: 767px)' }))
 
-
   return (
+    
 
     <div className="slideContainer work section">
       <div className="level">
@@ -92,7 +92,8 @@ const Work = () => {
         }}
         speed={500}
         autoHeight={false}
-
+        observer={true}
+        updateOnWindowResize={true}
       // style={{ maxHeight: '100vh' }}
       >
         {

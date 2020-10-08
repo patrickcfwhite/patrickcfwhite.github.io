@@ -76,10 +76,9 @@
   background: linear-gradient(to bottom, #8bd8c2, rgb(105, 165, 164)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#projectCard {
+/* #projectCard {
   /* border: black solid 1px; */
   /* height: 80vh; */
-}
 
 .title {
   color: rgb(70, 130, 180);
