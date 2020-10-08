@@ -34,6 +34,10 @@
   font-size: 2.2em;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .swiper-pagination {
     display: none;
@@ -131,6 +135,10 @@ html {
     max-width: 26vw;
     max-height: 26vh;
     border-radius: 50%;
+  }
+
+  .npm-logo {
+    max-width: 3.2vw;
   }
 
 

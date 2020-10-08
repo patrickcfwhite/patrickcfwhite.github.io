@@ -49,17 +49,16 @@ const About = () => {
         <div className="column is-three-fifths">
           <h1 className="title">~About Me</h1>
           <div className="about-text section">
-            <p>Before becoming a web developer my background was as a musician, but to actually forge a career in music
-            my day to day work has been rather varied. From performing on stage, to weddings, to teaching, to composing and more.
+            <p>Before becoming a web developer, my background was in music. To forge a career as a musician, my day to day work was very varied; 
+              from performing on stage and weddings to teaching, composing and more.
             From this, I’ve developed a range of skills threaded together with a focus on creativity, and delivering something of high quality.
             </p><br />
-            <p>I decided to make a career change as I wanted to work in a different type of role, but in a field that valued these assets,
-            and to add a new skill set. During my transition to software engineering I found my previous experience has been incredibly valuable.
+            <p>While changing career and transitioning to software engineering, I  realised that my previous experience was incredibly valuable.
             There has been a great deal of overlap with music and I’ve relished the opportunity to show my creative side whilst working in a more structured environment.
             I’ve particularly enjoyed the emphasis on collaboration and peer-review.
             </p><br />
-            <p>My main takeaway from the course is how much I actually enjoy coding, and how diving into the intensive course has
-            further solidified that I want to pursue it as a career. It feels very exciting for me to find I have this much passion in a vocation that isn’t music.
+            <p>I recently dedicated three months to a full time a Software Engineering Intensive course at General Assembly. 
+              This has further solidified my coding foundation, my interest for this discipline and my excitement to pursue it as a new career!
             </p><br /><br />
             <img src={photoOfMe} id="photo" alt="patrick white"/>
           </div>
@@ -73,12 +72,12 @@ const About = () => {
               return (
                 <div 
                   key={`${skill}-icon`} 
-                  className="column is-3-desktop is-hidden-mobile has-text-centered"> 
+                  className="column is-one-third-desktop is-hidden-mobile has-text-centered"> 
                   {/* <DevIcon icon={skill} style={devIconStyle} /> */}
-                  {skill !== 'npm '? 
-                  <i className={skill === 'npm' ? `devicon-${skill}-original skillIcon` : `devicon-${skill}-plain skillIcon`} style={devIconStyle}></i>
-                  :
-                  <img src={npmLogo} alt='npm logo' style={devIconStyle}/>
+                  {
+                  <i className={skill === 'npm' ? `devicon-${skill}-original-wordmark skillIcon`: `devicon-${skill}-plain skillIcon`} style={devIconStyle}></i>
+                  // :
+                  // <img src={npmLogo} alt='npm logo' className="npm-logo"/>
                 }
                   <p className="skill-overlay">{name}</p>
                 </div>
