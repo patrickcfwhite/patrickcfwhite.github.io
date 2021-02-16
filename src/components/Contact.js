@@ -10,19 +10,26 @@ const Contact = () => {
   ]
 
   return (
-    <div className="slideContainer contact section centercenter">
-      <h1 className="title">Get in touch</h1>
-      <div className="columns has-text-centered is-vcentered">
+    <>
+    <div className="slideContainer contact section">
+      <h1 className="title">~Contact</h1>
+        <div className="section">
+        <p className="subtitle">If you'd like to get in touch please use the links below to contact me via email or follow me on social media.</p>
+        </div>
+      <div className="columns has-text-centered is-vcentered hero-body">
         {links.map(link => {
-          return <div key={`link-${link.name}`} className='column section'><a rel="noopener noreferrer" target='_blank' href={link.link}><h1 className="contactText">{link.name}</h1></a></div>
+          return <div key={`link-${link.name}`} className='column'><a rel="noopener noreferrer" target='_blank' href={link.link}><h1 className="contactText">{link.name}</h1></a></div>
         })}
-      
-        {/* <div className="column section"><h1 className="contactText">Github</h1></div>
-      <div className="column section"><h1 className="contactText">Twitter</h1></div>
-      <div className="column section"><h1 className="contactText">LinkedIn</h1></div> */}
       </div>
-      {/* <a class="twitter-timeline" href="https://twitter.com/patrickcfwhite?ref_src=twsrc%5Etfw">Tweets by patrickcfwhite</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
     </div>
+    <footer class="my-footer">
+    <div class="content has-text-centered">
+      <p>
+        by Patrick White
+      </p>
+    </div>
+  </footer>
+  </>
   )
 }
 

@@ -9,10 +9,13 @@ import { useMediaQuery } from 'react-responsive'
 // import 'aos/dist/aos.css'
 import 'devicon'
 
-const skills = [['javascript', 'JavaScript'], ['nodejs', 'Node.js'], ['react', 'React'],
- ['html5', 'HTML5'], ['css3', 'CSS3'], ['sass','SASS'], ['python', 'Python'], ['django', 'Django'], ['github', 'Github'], ['npm', 'NPM'], 
-['webpack', 'Webpack'], ['postgresql', 'PostgreSQL'], ['mongodb', 'MongoDB'], 
-['visualstudio', 'Visual Studio'], ['heroku', 'Heroku'], ['git', 'Git'], ['apple', 'Apple'], ['yarn', 'Yarn']
+const skills = [
+ ['javascript', 'JavaScript'], ['nodejs', 'Node.js'], ['react', 'React'],
+ ['html5', 'HTML5'], ['css3', 'CSS3'], ['sass','SASS'], 
+ ['python', 'Python'], ['django', 'Django'], ['visualstudio', 'Visual Studio'],
+ ['postgresql', 'PostgreSQL'], ['mongodb', 'MongoDB'], ['express', 'Express.js'], 
+ ['npm', 'NPM'], ['yarn', 'Yarn'], ['webpack', 'Webpack'], 
+ ['git', 'Git'], ['github', 'Github'],['heroku', 'Heroku']
 ]
 
 const devIconStyle = {
@@ -21,7 +24,6 @@ const devIconStyle = {
 }
 
 const photoOfMe = require('../assets/headshotbw.jpg')
-const npmLogo = require('../assets/npmlogo.png')
 
 const About = () => {
 
@@ -53,12 +55,11 @@ const About = () => {
               from performing on stage and weddings to teaching, composing and more.
             From this, I’ve developed a range of skills threaded together with a focus on creativity, and delivering something of high quality.
             </p><br />
-            <p>While changing career and transitioning to software engineering, I  realised that my previous experience was incredibly valuable.
+            <p>While changing career and transitioning to software engineering, I realised that my previous experience was incredibly valuable.
             There has been a great deal of overlap with music and I’ve relished the opportunity to show my creative side whilst working in a more structured environment.
             I’ve particularly enjoyed the emphasis on collaboration and peer-review.
             </p><br />
-            <p>I recently dedicated three months to a full time a Software Engineering Intensive course at General Assembly. 
-              This has further solidified my coding foundation, my interest for this discipline and my excitement to pursue it as a new career!
+            <p>I'm currently contracting as a Full Stack Developer and really enjoying it. It's inspired me to learn more dedicated back-end tools to take my skiils to the next level!
             </p><br /><br />
             <img src={photoOfMe} id="photo" alt="patrick white"/>
           </div>
@@ -75,7 +76,7 @@ const About = () => {
                   className="column is-one-third-desktop is-hidden-mobile has-text-centered"> 
                   {/* <DevIcon icon={skill} style={devIconStyle} /> */}
                   {
-                  <i className={skill === 'npm' ? `devicon-${skill}-original-wordmark skillIcon`: `devicon-${skill}-plain skillIcon`} style={devIconStyle}></i>
+                  <i className={skill === 'npm' || skill === 'express' ? skill === 'express' ? `devicon-${skill}-original skillIcon`: `devicon-${skill}-original-wordmark skillIcon` :`devicon-${skill}-plain skillIcon`} style={devIconStyle}></i>
                   // :
                   // <img src={npmLogo} alt='npm logo' className="npm-logo"/>
                 }
@@ -100,14 +101,12 @@ const About = () => {
           my day to day work has been rather varied. From performing on stage, to weddings, to teaching, to composing and more.
           From this, I’ve developed a range of skills threaded together with a focus on creativity, and delivering something of high quality.
           </p><br />
-          <p>I decided to make a career change as I wanted to work in a different type of role, but in a field that valued these assets,
-          and to add a new skill set. During my transition to software engineering I found my previous experience has been incredibly valuable.
-          There has been a great deal of overlap with music and I’ve relished the opportunity to show my creative side whilst working in a more structured environment.
-          I’ve particularly enjoyed the emphasis on collaboration and peer-review.
+          <p>While changing career and transitioning to software engineering, I realised that my previous experience was incredibly valuable.
+            There has been a great deal of overlap with music and I’ve relished the opportunity to show my creative side whilst working in a more structured environment.
+            I’ve particularly enjoyed the emphasis on collaboration and peer-review.
           </p><br />
-          <p>My main takeaway from the course is how much I actually enjoy coding, and how diving into the intensive course has
-          further solidified that I want to pursue it as a career. It feels very exciting for me to find I have this much passion in a vocation that isn’t music.
-          </p><br /><br />
+          <p>I'm currently contracting as a Full Stack Developer and really enjoying it. It's inspired me to learn more dedicated back-end tools to take my skiils to the next level!</p>
+<br /><br />
         </div>}
          { skillsDisplay &&
          // <div className="columns is-mobile is-multiline section skills">
