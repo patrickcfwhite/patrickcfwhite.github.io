@@ -9,14 +9,14 @@
     "@testing-library/user-event": "^7.1.2",
     "aos": "^2.3.4",
     "bulma": "^0.9.0",
-    "devicon": "^2.2.0",
+    "devicon": "^2.14.0",
     "devicon-react-svg": "^0.2.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-responsive": "^8.1.0",
     "react-scripts": "3.4.3",
-    "swiper": "^6.3.2"
+    "swiper": "^6.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
